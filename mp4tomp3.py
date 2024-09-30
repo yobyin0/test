@@ -1,5 +1,6 @@
 import moviepy.editor as mp
 import os
+### 该功能是把mp4的转成mp3模式
 def extract_audio(videos_file_path):
     my_clip = mp.VideoFileClip(videos_file_path)
     my_clip.audio.write_audiofile(f'{videos_file_path}.mp3')
